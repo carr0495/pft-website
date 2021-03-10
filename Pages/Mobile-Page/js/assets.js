@@ -1,0 +1,1 @@
+var SPLINE_ASSETS_LIST = { fonts: ['roboto_regular','space_mono_bold','roboto_bold','raleway_bold'], images: [], models: [], animations: [] }
