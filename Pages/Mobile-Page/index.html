@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         width: 100%;
@@ -57,7 +62,7 @@
       video {
         z-index: 101;
         border-radius: 15px;
-        box-shadow: 0px 3px 10px black;
+        box-shadow: 0px 8px 5px black;
       }
       #vid_container {
         /* background-color: rgba(255, 255, 255, 0); */
@@ -70,7 +75,12 @@
         /* align-self: center; */
         justify-content: space-evenly;
         flex-wrap: wrap;
-        bottom: 15%;
+        bottom: 10%;
+      }
+      p {
+        color: white;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
       }
     </style>
     <title>Mobile-Page</title>
@@ -78,10 +88,10 @@
   <body>
     <div id="nav_bar">
       <ul>
-        <li><a href="">Web</a></li>
+        <!-- <li><a href="">Web</a></li> -->
         <li><a href="../../Front-Page/index.html">Home</a></li>
-        <li><a href="">Resume</a></li>
-        <li><a href="">Game Dev</a></li>
+        <li><a href="/Docs/CV-Aiden-Carrie2021.pdf">Resume</a></li>
+        <li><a href="https://github.com/carr0495">Github</a></li>
       </ul>
     </div>
 
@@ -90,18 +100,40 @@
     </div>
     <div id="vid_container">
       <div>
-        <video width="250" height="" controls>
+        <video width="230" height="" controls>
           <source src="/Videos/eventi.mp4" type="video/mp4" />
         </video>
-        <!-- <p>Something</p> -->
+        <p>Eventi Prototype</p>
+        <p>Created in Adobe XD</p>
+      </div>
+      <div>
+        <video width="230" height="" controls>
+          <source src="/Videos/Weather.mov" type="video/mp4" />
+        </video>
+        <p>Weather App</p>
+        <a href="https://github.com/carr0495/mad9135-c1-html5-weather"
+          >https://github.com/c1-html5-weather</a
+        >
       </div>
 
-      <video width="250" height="" controls>
-        <source src="/Videos/Weather.mov" type="video/mp4" />
-      </video>
-      <video width="250" height="" controls>
-        <source src="/Videos/yelp.mov" type="video/mp4" />
-      </video>
+      <div>
+        <video width="230" height="" controls>
+          <source src="/Videos/yelp.mov" type="video/mp4" />
+        </video>
+        <p>Yelp App (clone)</p>
+        <a href="https://github.com/carr0495/mad9135-f20-p2-react-native-yelp"
+          >https://github.com-react-native-yelp</a
+        >
+      </div>
+      <div>
+        <video width="230" height="" controls>
+          <source src="/Videos/wip.MP4" type="video/mp4" />
+        </video>
+        <p>Kijiji (WIP)</p>
+        <a href="https://github.com/carr0495/Folio1"
+          >https://github.com/carr0495/Folio1</a
+        >
+      </div>
     </div>
 
     <script>
