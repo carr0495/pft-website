@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -14,7 +14,7 @@
         height: 100%;
         margin: 0;
         position: fixed;
-        background: rgba(255, 68, 68, 1);
+        background: rgba(0, 0, 0, 1);
       }
       canvas {
         width: 100%;
@@ -26,66 +26,71 @@
         height: 100%;
         position: relative;
       }
-
-      a {
-        z-index: 100;
-        font-size: 16px;
-        color: white;
+      h1 {
         position: absolute;
-        font-family: "Raleway", sans-serif;
-        text-decoration: none;
+        z-index: 100;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        color: white;
+        background-color: transparent;
+        font-family: "Comfortaa", cursive;
       }
+      nav > * {
+        position: absolute;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        z-index: 100;
+        width: 100vw;
+        margin-top: 5%;
+      }
+
+      ul {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-inline-start: 0;
+        margin-top: 9vh;
+      }
+
       li {
-        padding: 50px;
+        text-decoration: none;
         list-style: none;
+      }
+      a {
+        margin: 5px;
+        font-family: "Comfortaa", cursive;
+        color: white;
+        border-bottom: none;
+        border-style: none;
+        text-decoration: none;
       }
       a:hover {
         color: rgba(255, 255, 255, 0.399);
       }
-      ul {
-        text-decoration: none;
-        border: none;
-        list-style-type: none;
-        margin: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-      #nav_bar {
-        position: fixed;
-        z-index: 100;
-        display: flex;
-        width: 500px;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
     </style>
-    <title>Front-Page</title>
+    <title>Front_Page</title>
   </head>
   <body>
-    <div id="nav_bar">
+    <h1>Aiden Carrie</h1>
+    <nav>
       <ul>
-        <!-- <li><a href="">Web</a></li> -->
-        <li><a href="./Pages/Mobile-Page/">Mobile</a></li>
-        <li><a href="./Docs/CV-Aiden-Carrie2021.pdf">Resume</a></li>
-        <li><a href="https://github.com/carr0495">Github</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="/Pages/Mobile-Page/">Mobile</a></li>
+        <li><a href="#">Resume</a></li>
       </ul>
-    </div>
-
+    </nav>
     <div id="container">
       <canvas id="canvas3d"></canvas>
     </div>
 
-    <script>
-      // Global namespace (backwards-compatibility)
-      var SPE = {};
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.spline.design/lib/anime.min.js"></script>
-    <script src="https://cdn.spline.design/lib/spline.runtime.min.js"></script>
-    <script src="js/assets.js"></script>
-    <script src="js/scene.js"></script>
+    <script src="js/spline.runtime.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
